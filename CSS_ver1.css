@@ -1,0 +1,49 @@
+body {
+	background: lightgray;
+}
+
+#TopMenu {
+	height: 30px;
+	width: 80%;
+
+	margin: auto;
+}
+
+#TopMenu ul li {
+	list-style: none;
+	color: black;
+	background: lightgray;
+
+	float: left;
+	text-align: center;
+
+	line-height: 30px;
+	vertical-align: middle;
+
+}
+#TopMenu .menuAtt {
+	text-decoration: none;
+
+	display: inline-block;
+
+	width: 150px;
+
+}
+
+#TopMenu .menuAtt:hover{
+	background: gray;
+}
+
+div#Title {
+
+	border-style: solid;
+	width: 80%;
+	padding: 10px;
+
+	margin: auto;
+
+	font-size: 35px;
+	font-weight: bold;
+
+	text-align: center;
+}
