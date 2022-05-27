@@ -1,49 +1,134 @@
-body {
-	background: lightgray;
-}
-
-#TopMenu {
-	height: 30px;
-	width: 80%;
-
-	margin: auto;
-}
-
-#TopMenu ul li {
-	list-style: none;
-	color: black;
-	background: lightgray;
-
-	float: left;
-	text-align: center;
-
-	line-height: 30px;
-	vertical-align: middle;
-
-}
-#TopMenu .menuAtt {
-	text-decoration: none;
-
-	display: inline-block;
-
-	width: 150px;
-
-}
-
-#TopMenu .menuAtt:hover{
-	background: gray;
+@font-face {
+  font-family : 'nanum';
+  src : url(media/NanumGothicBold.otf)
 }
 
 div#Title {
 
-	border-style: solid;
+	text-align: center;
+	
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'nanum';
+
 	width: 80%;
 	padding: 10px;
 
-	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
-	font-size: 35px;
-	font-weight: bold;
+div#Title:hover
+{
 
-	text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;  
+}
+
+h1 {
+  margin: 2em 0 1.5em 0;
+}
+
+nav {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(90deg, deepskyblue, royalblue, limegreen, palegreen);
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#TopMenu li {
+  float: left;
+  position: relative;
+}
+
+#TopMenu li a {
+  font-size: 10dp;
+  font-family: 'nanum';
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 15px 35px;
+  border-right: 1px solid rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+#TopMenu li:nth-child(1) a {
+  border-left: 1px solid rgba(0,0,0,0.15);
+}
+
+#BottomMenu {
+  position: absolute;
+  background: #182952;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+}
+
+#BottomMenu li {
+  padding: 16px 28px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+#BottomMenu li  a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+
+#TopMenu li:hover #BottomMenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#BottomMenu li a:hover {
+ text-decoration: underline;
+}
+
+section {
+  column-width: 15em;
+  background: #dadadf;
+  padding: 2em 12em;
+}
+
+/*스크롤 따라 떠다니는 메뉴탭*/
+ .skydiv {
+ 	position: fixed; top: 70%; left: 85%;
+ 	border: 2px solid black; padding: 15px;
+ 	background: beige;
+ }
+
+ .skydiv ul li{
+ 	list-style: none;
+ 	border-bottom: 2px solid rgba(0,0,0,0.15);
+ 	font-size: 12px;
+ 	font-family: 'nanum';
+ 	margin-bottom: 5px;
+ }
+
+
+#FloatText li a {
+	display: inline-block;
+	text-decoration: none;
+ 	text-decoration-line: none;
+ 	color: darkslategray;
+}
+
+#FloatText li a:hover {
+	color: lightgray;	
 }
