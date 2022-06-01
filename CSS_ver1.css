@@ -1,9 +1,9 @@
 @font-face {
   font-family : 'nanum';
-  src : url(https://github.com/Rubiver/Rubiver_2022/blob/main/NanumGothicBold.otf)
+  src : url(media/NanumGothicBold.otf)
 }
 
-div#Title {
+header div#Title {
 
 	text-align: center;
 	
@@ -11,7 +11,7 @@ div#Title {
 	font-weight: bold;
 	font-family: 'nanum';
 
-	width: 80%;
+	width: 100%;
 	padding: 10px;
 
 	margin-top: 10px;
@@ -88,7 +88,11 @@ ul, li {
 
 #BottomMenu li  a {
   color: rgba(255,255,255,0.6);
+  display: block;
   text-decoration: none;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 #TopMenu li:hover #BottomMenu {
@@ -100,18 +104,25 @@ ul, li {
  text-decoration: underline;
 }
 
+header {
+	position: relative;
+}
+
 section {
-  column-width: 15em;
-  background: #dadadf;
-  padding: 2em 12em;
+	display: inline-block;
+	width: 80%;
+ 	background: aliceblue;
+	padding: 2em 12em;
 }
 
 /*스크롤 따라 떠다니는 메뉴탭*/
  .skydiv {
- 	position: fixed; top: 70%; left: 85%;
+ 	position: fixed; top: 75%; left: 90%;
  	border: 2px solid black; padding: 15px;
  	background: beige;
+ 	z-index: 999;
  }
+
 
  .skydiv ul li{
  	list-style: none;
@@ -131,4 +142,87 @@ section {
 
 #FloatText li a:hover {
 	color: lightgray;	
+}
+
+#imgslide{
+	width: 500px;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden; /*현재  슬라이드 오른쪽 사진 안보임*/
+}
+
+#imgslide input[type=radio]{
+	display: none;
+}
+/*슬라이드에 해당하는 배경색 지정과 슬라이드 변경 애니메이션*/
+#imgslide input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
+    background-color: #fff;
+}
+#imgslide input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
+    background-color: #fff;
+}
+#imgslide input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
+    background-color: #fff;
+}
+#imgslide input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
+    background-color: #fff;
+}
+
+#imgslide input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+#imgslide input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+#imgslide input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+#imgslide input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
+    left: 0;
+    transition: 0.5s;
+    z-index:1;
+}
+
+ul.imgs{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.imgs li{
+	position: absolute;
+	left: 600px;
+	transition-delay: 1s;
+	padding: 0;
+	margin: 0;
+}
+ul.imgs img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.bullet{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+	z-index: 2;
+}
+
+.bullet label{
+	display: inline-block;
+	border-radius: 50%;
+	background: white;
+	border: solid 1px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
 }
