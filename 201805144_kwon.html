@@ -7,43 +7,106 @@
 		<link rel="stylesheet" type="text/css" href="CSS_ver1.css">
 	</head>
 	<body>
-		<div id="Title">
-			201805144 권석경 관심 기술 소개
-		</div>
+		<header>
+			<div id="Title">
+			201805144 권석경 관심 기술 : IoT
+		</div>	
+		</header>
+		
 		<div class="skydiv">
 			<ul id="FloatText">
-				<li><a href="#">Theme Motive</a></li>
-				<li><a href="#">Future Plan</a></li>
+				<li><a href="#Anchor_Theme">Theme</a></li>
+				<li><a href="#Anchor_Future">Future Plan</a></li>
 				<li><a href="#">Technologies</a></li>
 			</ul>
 		</div>
 		<nav>
 			  <ul id="TopMenu">
-			    <li><a href="#">주제 선정동기</a></li>
-			    <li><a href="#">주제 관련 <br> 미래설계</a></li>
+			    <li><a href="#Anchor_Theme">주제 선정동기</a></li>
+			    <li><a href="#Anchor_Future">주제 관련 <br> 미래설계</a></li>
 			    <li><a href="#">관련 기술 내용</a>
 			      <ul id="BottomMenu">
-			        <li><a href="#" >submenu</a></li>
-			        <li><a href="#" >submenu</a></li>
-			        <li><a href="#" >submenu</a></li>
-			        <li><a href="#" >submenu</a></li>
+			      	<li><a href="#" >사물 신원 확인</a></li>
+			        <li><a href="#" >네트워크 구축</a></li>
+			        <li><a href="#" >감각 부여(센서부착)</a></li>
 			      </ul>
 			    </li>
-			    <li><a href="#">MENU4</a>
-			      <ul id="BottomMenu">
-			        <li><a href="#" >submenu</a></li>
-			        <li><a href="#" >submenu</a></li>
-			        <li><a href="#" >submenu</a></li>
-			        <li><a href="#" >submenu</a></li>
-			        <li><a href="#" >submenu</a></li>
-			      </ul>
-			    </li>
+			    <li>
+			    	<div id="BottomMenu" class="clock"><a href="#" >감각 부여(센서부착)</a></div>
+				</li>
 			  </ul>
 		</nav>
 
-		<div id="Theme">
+		<section style="border: solid 2px;" id="Anchor_Theme">
+			<article>
+				<div style="float: left; display: block; width: 30%; position: relative; ">
+					<video controls width="300" height="400">
+						<source src="media/bltomo.mp4" type="">
+					</video>
+				</div>
+				<div style="float: left; position: relative; top: 25px; left: 10%; width: 65%;  display: block; text-align: center;">
+					<span style= "text-align: center; font-size: 30px; font-weight: bold; font-family: 'nanum';">주제 선정 이유</span>
+					<span style="text-align: cennter; display: block;">
+						<p>
+							공주대학교 편입 전에 다니던 대학교에서 졸업작품으로 IoT를 이용한 스마트창문을 주제로하여 출품한 적이 있었습니다. 고등학교 시절부터 관심이 있던 아두이노와 대학교때 본격적으로 배운 어플리케이션 제작 및 3D모델링 수업 모두 관심이 있었기에 배움 내용을 이용해서 만들어 보았습니다. 직접 설계한 시스템이 더욱 관련 기술에 흥미를 가지게 되었고, 미래에 어떤 분야로 진출해야 되는지 불투명했던 미래의 방향성을 잡게되었습니다.
+						</p>
+						<br><br><br><br><br>
+						<p>								
+							◀ 해당 영상은 스마트폰에서 스마트 창문을 제어하기 위하여 블루투스를 통해 모터를 제어하는 영상입니다.
+						</p>
+					</span>
+				</div>
+			</article>
+			<br>
+		</section>
+
+		<section style="border: solid 2px;" id="Anchor_Future">
+			<article>				
+				<div style="text-align: center; width: 100%;">
+					<span style= "text-align: center; font-size: 30px; font-weight: bold; font-family: 'nanum';">주제 관련 미래설계</span>
+					<ol>
+						<li>1. 관심 기술 공부계획 <br>
+							<p>&nbsp;&nbsp;<a href="https://cp.kiot.or.kr/main/index.nx">한국지능형사물인터넷협회</a>에서 주관하는 IoT지식능력 검정을 통해 자격증 취득<br><br>IoT 분야에서 AI를 이용한 스마트홈을 개발하기 때문에, AI에 관련된 러닝기술 및 알고리즘을 공부하고 <a href="https://www.dataq.or.kr/www/main.do">한국데이터베이스진흥원</a>에서 주관하는 국가기술 빅데이터 자격증인 ADP, ADsP의 자격증을 취득을 목표로 공부할 계획입니다.<br>
+							 
+							</p>
+						</li>
+
+					</ol>
+				</div>
+				
+				<div id="imgslide">
+					<input type="radio" name="slide" id="slide1" checked>
+					<input type="radio" name="slide" id="slide2">
+					<input type="radio" name="slide" id="slide3">
+					<input type="radio" name="slide" id="slide4">
+					<ul id="imgholder" class="imgs">
+						<li><img src="media/img1.jpg"></li>
+						<li><img src="media/img2.jpg"></li>
+						<li><img src="media/img3.jpg"></li>
+						<li><img src="media/img4.jpg"></li>						
+					</ul>
+					<div class="bullet">
+						<label for="slide1">&nbsp;</label>
+						<label for="slide2">&nbsp;</label>
+						<label for="slide3">&nbsp;</label>
+						<label for="slide4">&nbsp;</label>						
+					</div>
+				</div>
+			</article>
+			<br>
 			
-		</div>
+		</section>
+		<section>
+			<article>
+				사물인터넷(영어: Internet of Things, 약어로 IoT)은 각종 사물에 센서와 통신 기능을 내장하여 인터넷에 연결하는 기술. 즉, 무선 통신을 통해 각종 사물을 연결하는 기술을 의미한다. 여기서 사물이란 가전제품, 모바일 장비, 웨어러블 디바이스 등 다양한 임베디드 시스템이 된다. 사물인터넷에 연결되는 사물들은 자신을 구별할 수 있는 유일한 아이피를 가지고 인터넷으로 연결되어야 하며, 외부 환경으로부터의 데이터 취득을 위해 센서를 내장할 수 있다. 모든 사물이 바이러스와 해킹의 대상이 될 수 있어 사물인터넷의 발달과 보안의 발달은 함께 갈 수밖에 없는 구조이다.
+				정보 기술 연구 및 자문회사 가트너에 따르면 2009년까지 사물인터넷 기술을 사용하는 사물의 개수는 9억여개였으나 2020년까지 이 수가 260억 개에 이를 것으로 예상된다. 이와 같이 많은 사물이 연결되면 인터넷을 통해 방대한 데이터가 모이게 되는데, 이렇게 모인 데이터는 기존 기술로 분석하기 힘들 정도로 방대해진다. 이것을 빅 데이터라고 부른다. 따라서 빅 데이터를 분석하는 효율적인 알고리즘을 개발하는 기술의 필요성이 사물인터넷의 등장에 따라 함께 대두되고 있다.
+			</article>
+			<br>
+			<article>
+				시스코 시스템즈의 조사에 따르면 2013년부터 2022년까지 10년간 사물인터넷이 14조 4천억 달러의 경제적 가치가 있을 것이라고 예상한다.
+			</article>
+		</section>
+				
 
 	</body>
 </html>
