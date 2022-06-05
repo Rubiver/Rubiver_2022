@@ -3,6 +3,11 @@
   src : url(media/NanumGothicBold.otf)
 }
 
+@font-face {
+	font-family: 'nanum_contents';
+	src : url(media/NanumSquareB.otf)
+}
+
 header div#Title {
 
 	text-align: center;
@@ -16,11 +21,6 @@ header div#Title {
 
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-div#Title:hover
-{
-
 }
 
 body {
@@ -79,6 +79,7 @@ ul, li {
   opacity: 0;
   visibility: hidden;
   transition: all 0.15s ease-in;
+  z-index: 99;
 }
 
 #BottomMenu li {
@@ -113,6 +114,11 @@ section {
 	width: 80%;
  	background: aliceblue;
 	padding: 2em 12em;
+}
+
+footer {
+	width: 100%;
+	height: 100px;
 }
 
 /*스크롤 따라 떠다니는 메뉴탭*/
@@ -157,16 +163,16 @@ section {
 }
 /*슬라이드에 해당하는 배경색 지정과 슬라이드 변경 애니메이션*/
 #imgslide input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
-    background-color: #fff;
+    background-color: aliceblue;
 }
 #imgslide input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
-    background-color: #fff;
+    background-color: aliceblue;
 }
 #imgslide input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
-    background-color: #fff;
+    background-color: aliceblue;
 }
 #imgslide input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
-    background-color: #fff;
+    background-color: aliceblue;
 }
 
 #imgslide input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
@@ -198,7 +204,7 @@ ul.imgs{
 
 ul.imgs li{
 	position: absolute;
-	left: 600px;
+	left: 500px;
 	transition-delay: 1s;
 	padding: 0;
 	margin: 0;
@@ -221,8 +227,86 @@ ul.imgs img{
 	display: inline-block;
 	border-radius: 50%;
 	background: white;
-	border: solid 1px;
+	border: solid 2px;
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
+}
+
+#Title_contents {
+	border-top: solid 2px;
+	padding-top: 10px;
+	display: inline-block;
+	width: auto;
+	font-size: 25px;
+	font-family: 'nanum';
+}
+
+@keyframes rainbow {     
+ 0% { color: indianred; }
+ 15% { color: orange; }
+ 30% { color: yellow; }
+ 45% { color: yellowgreen; }
+ 60% { color: green; }
+ 75% { color: lightblue; }
+ 90% { color: royalblue; } 
+ 100% { color: purple; }
+}
+
+#iot_title{
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+}
+
+legend#iot_uses {		
+	text-align: center; 
+	font-size: 35px; 
+	font-family:'nanum';
+	animation-duration: 5s;
+	animation-name: rainbow;
+	animation-iteration-count: infinite;
+}
+
+#outer_div {
+	width:100%; 
+	padding: 20px; 
+	display: flex;
+	justify-content: center;
+	align-content: center;"
+}
+
+#inner_div {
+	border: solid 1px;
+	margin: 15px;
+	width: 400px;
+	height: 350px;
+}
+
+#inner_title {
+	display: flex;
+	justify-content: center; 
+	margin-top: 10px; 
+	font-weight: bold; 
+	font-size:25px;
+}
+
+#contents_div {
+	 width: 80%; 
+	 height: 80%; 
+	 margin-top: 10px; 
+	 margin-left: 35px;
+	 margin-right: 35px;
+	 font-family: 'nanum_contents';
+}
+
+#clock {
+	float: right;
+	font-family: 'nanum_contents';
+	font-size: 20px;
+}
+
+#nanum-font {
+	font-family: 'nanum_contents';
+	letter-spacing: 0.03em;
+	word-spacing: 0.03em;
 }
