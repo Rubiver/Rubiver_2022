@@ -11,7 +11,7 @@
 		<header>
 			<div id="Title">
 			201805144 권석경 관심 기술 : IoT
-		</div>	
+			</div>	
 		</header>
 		
 		<div class="skydiv">
@@ -28,12 +28,13 @@
 			    <li><a href="#Anchor_Future">주제 관련 <br> 미래설계</a></li>
 			    <li><a href="#Anchor_Contents">관련 기술 내용</a>
 			      <ul id="BottomMenu">
-			      	<li><a href="#" >사물 신원 확인</a></li>
-			        <li><a href="#" >네트워크 구축</a></li>
-			        <li><a href="#" >감각 부여(센서부착)</a></li>
+			      	<li><a href="#Title_contents" >사물 신원 확인</a></li>
+			        <li><a href="#Title_contents" >네트워크 구축</a></li>
+			        <li><a href="#Title_contents" >감각 부여(센서부착)</a></li>
+			        <li><a href="#Title_contents" >프로그래밍 언어 비율</a></li>
 			      </ul>
 			    </li>
-			    <li><a href="#">IoT 사용 분야</a>
+			    <li><a href="#iot_uses">IoT 사용 분야</a>
 			    <li>
 			    	<div id="BottomMenu" class="clock"><a href="#" ></a></div>
 				</li>
@@ -51,10 +52,10 @@
 					<span style= "text-align: center; font-size: 30px; font-weight: bold; font-family: 'nanum';">주제 선정 동기</span>
 					<span style="text-align: cennter; display: block;">
 						<p id="nanum-font">
-							저는 고등학교에서부터 C언어를 주로하는 프로그래밍 동아리를 운영하고, 아두이노 동아리를 , 가입하여 열심히 활동했었는데, 그때 아두이노를 공부했었습니다. 또한 	공주대학교 편입 전에 다니던 대학교에서 졸업작품으로 IoT를 이용한 스마트창문을 주제로하여 출품한 적이 있었습니다. 고등학교 시절부터 관심이 있던 아두이노와 대학교때 본격적으로 배운 어플리케이션 제작 및 3D모델링 수업 모두 관심이 있었기에 배움 내용을 이용해서 만들어 보았습니다. 직접 설계한 시스템이 더욱 관련 기술에 흥미를 가지게 되었고, 미래에 어떤 분야로 진출해야 되는지 불투명했던 미래의 방향성을 잡게되었습니다.
+							저는 고등학교에서부터 각종 컴퓨터동아리를 통해 관련 지식인 C나 자바, 아두이노를 공부했었습니다. 그래서 아두이노로 만드는 오락기계나 라즈베리 파이를 가지고 만드는 스마트거울 등을 직접 만들어보고 싶었습니다. 마침 공주대학교 편입 전에 다니던 대학교에서 3D프린터를 사용할 수 있었고, 애플리케이션 제작 관련 수업이 있었기 때문에 졸업작품으로 IoT 관련하여 스마트창문을 주제로하여 출품한 적이 있었습니다. 출품할 시스템을 직접 개발해보면서 더욱 관련 기술에 흥미를 가지게 되었고, 미래에 어떤 분야로 진출해야 되는지 불투명했던 미래의 방향성을 잡게되었습니다.
 						</p>
 						<br><br><br><br><br>
-						<p>								
+						<p id="nanum-font">								
 							◀ 해당 영상은 스마트폰에서 스마트 창문을 제어하기 위하여 블루투스를 통해 모터를 제어하는 영상입니다.
 						</p>
 					</span>
@@ -126,7 +127,7 @@
 			</article>
 			<br>
 			<article>
-				<span id="Title_contents">사물 신원 확인</span><br><br>
+				<span id="Title_contents" class="tc_1">사물 신원 확인</span><br><br>
 				<p id="nanum-font">
 					사물인터넷에 참여하는 각각의 개체는 다른 개체로 하여금 스스로를 식별할 수 있게 해주는 신원이 필요하다. 근거리에 위치한 사물의 신원을 나타내는 기술은 RFID기술이지만 보다 넓은 범위의 네트워크 상에서 개별 사물의 신원을 확인하기 위해서는 개별 사물에 IP주소를 부여해야 한다. 이에 따라 IP주소에 대한 수요는 증가하였고 기존에 존재했던 32비트인 IPv4 체계로는 증가하는 사물들의 주소를 모두 할당하는 데 어려움이 따른다는 한계가 나타났다. 이로 인해 128 비트인 IPv6 체계의 필요성이 대두되고 있다 (다만, 이는 각 말단 사물 개체들이 인터넷 망에 직접 접속할 때를 전제로 하는 조건이며, 가정, 기업 등의 로컬 네트워크에 위치한 말단 사물들이 사설 IP주소를 이용하여 로컬 서버를 경유해 인터넷으로 정보를 주고 받는 경우에는 수요가 급격히 많아지는 것을 방지할 수 있다). 한편, 인터넷공급사업자인 ISP들이 가입자에게 제공하는 공인 IP주소를 일부 제한하고 있고, 추가 할당을 위해서는 비용을 지불해야하기 때문에 개별 가입자가 절대다수의 말단 사물을 공인 IP주소를 사용하여 인터넷에 바로 연결하는 것은 비용상 타당성이 없는 한계가 있음을 감안해야만 한다. 스마트미디어 산업이란 ICT가 융합해서 만들어진 새로운 산업이다.
 				</p>
@@ -201,11 +202,21 @@
 		</section>
 		<footer>
 			<div>
+				<form>
+					<button  onclick="htmlclose();" id="closebtn">페이지 닫기</button>	
+				</form>
+				
 				<span id="clock"></span>
 			</div>
 		</footer>
 		<script src="clock.js"></script>
 		<script src="canvas.js"></script>
+		<script type="text/javascript">
+			function htmlclose()
+			{	
+				window.close();
+			}
+		</script>
 	</body>
 </html>
 
