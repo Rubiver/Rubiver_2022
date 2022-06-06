@@ -310,3 +310,11 @@ legend#iot_uses {
 	letter-spacing: 0.03em;
 	word-spacing: 0.03em;
 }
+
+#closebtn {
+		font-size: 15px;
+	  border: solid 1px royalblue;
+	  background: aliceblue;
+	  color: royalblue;
+	  padding: 6px;
+}
